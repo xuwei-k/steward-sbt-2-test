@@ -1,5 +1,9 @@
 on:
   workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
 jobs:
   scala-steward:
     runs-on: ubuntu-latest
